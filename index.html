@@ -3,327 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Computer Networks & Data Communication Notes</title>
+  <title>Define Computer Networks - Download</title>
   <style>
-    :root {
-      --primary: #1e40af;
-      --secondary: #0f172a;
-      --accent: #3b82f6;
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text: #334155;
-      --border: #e2e8f0;
-    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background-color: var(--bg);
       margin: 0;
-      padding: 1rem;
-    }
-    .container {
-      max-width: 850px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: var(--card-bg);
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-    }
-    h1 {
-      color: var(--secondary);
-      margin: 0 0 0.5rem 0;
-      font-size: 1.75rem;
-    }
-    h2 {
-      color: var(--primary);
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 0.4rem;
-      margin-top: 1.5rem;
-      font-size: 1.3rem;
-    }
-    h3 {
-      color: var(--secondary);
-      margin-top: 1rem;
-      font-size: 1.1rem;
-    }
-    .download-btn {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #2563eb;
-      color: #ffffff;
-      padding: 10px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
-      transition: background-color 0.2s ease;
-    }
-    .download-btn:hover {
-      background-color: #1d4ed8;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f1f5f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
     .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-    }
-    ul, ol {
-      padding-left: 1.25rem;
-      margin: 0.5rem 0;
-    }
-    li {
-      margin-bottom: 0.4rem;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1rem 0;
-      font-size: 0.95rem;
-    }
-    th, td {
-      border: 1px solid var(--border);
-      padding: 0.75rem;
-      text-align: left;
-    }
-    th {
-      background-color: #f1f5f9;
-      color: var(--secondary);
-    }
-    .diagram-box {
-      background-color: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem;
-      margin: 1rem 0;
+      background: #ffffff;
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
       text-align: center;
-      overflow-x: auto;
+      max-width: 420px;
+      width: 90%;
     }
-    .diagram-caption {
-      font-size: 0.85rem;
+    h2 {
+      margin: 0 0 0.5rem 0;
+      color: #0f172a;
+      font-size: 1.4rem;
+    }
+    p {
       color: #64748b;
-      margin-top: 0.5rem;
-      font-style: italic;
+      font-size: 0.95rem;
+      margin: 0 0 1.5rem 0;
     }
-    svg {
-      max-width: 100%;
-      height: auto;
+    .btn {
+      display: inline-block;
+      background-color: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-size: 1rem;
+      box-shadow: 0 3px 8px rgba(37, 99, 235, 0.3);
+    }
+    .btn:hover {
+      background-color: #1d4ed8;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Computer Networks & Data Communication</h1>
-      <p style="margin: 0; color: #64748b;">Study Guide & Reference Material</p>
-      <!-- Download Word Button -->
-      <a href="Define%20Computer%20Networks.docx" download class="download-btn">
-        📥 Download Word (.docx) Document
-      </a>
-    </header>
-
-    <!-- Section 1 -->
-    <div class="card">
-      <h2>1. Introduction to Computer Networks & LAN</h2>
-      <p>A <strong>computer network</strong> is a system where two or more computing devices are interconnected to share data, resources, and information. These devices, known as nodes, communicate via wired or wireless media to enable resource sharing, efficient communication, and centralized management.</p>
-      
-      <h3>Local Area Network (LAN)</h3>
-      <p>Connects devices within a small geographical area (home, office, campus).</p>
-      <ul>
-        <li>Covers a limited area</li>
-        <li>High data transfer rates (up to 10 Gbps)</li>
-        <li>Typically owned and managed by a single organization</li>
-      </ul>
-
-      <div class="diagram-box">
-        <svg viewBox="0 0 550 150" width="100%" height="150">
-          <line x1="30" y1="50" x2="520" y2="50" stroke="#0284c7" stroke-width="6"/>
-          <circle cx="90" cy="50" r="5" fill="#0369a1"/>
-          <line x1="90" y1="50" x2="90" y2="90" stroke="#64748b" stroke-width="2"/>
-          <rect x="70" y="90" width="40" height="25" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="90" y="106" font-size="10" text-anchor="middle">Host 1</text>
-          
-          <circle cx="200" cy="50" r="5" fill="#0369a1"/>
-          <line x1="200" y1="50" x2="200" y2="90" stroke="#64748b" stroke-width="2"/>
-          <rect x="180" y="90" width="40" height="25" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="200" y="106" font-size="10" text-anchor="middle">Host 2</text>
-
-          <circle cx="310" cy="50" r="5" fill="#0369a1"/>
-          <line x1="310" y1="50" x2="310" y2="90" stroke="#64748b" stroke-width="2"/>
-          <rect x="290" y="90" width="40" height="25" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="310" y="106" font-size="10" text-anchor="middle">Host 3</text>
-
-          <circle cx="420" cy="50" r="5" fill="#0369a1"/>
-          <line x1="420" y1="50" x2="420" y2="90" stroke="#64748b" stroke-width="2"/>
-          <rect x="400" y="90" width="40" height="25" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="420" y="106" font-size="10" text-anchor="middle">Host 4</text>
-        </svg>
-        <div class="diagram-caption">Figure 1.8(a): LAN with a common cable (Past)</div>
-      </div>
-
-      <div class="diagram-box">
-        <svg viewBox="0 0 550 140" width="100%" height="140">
-          <rect x="30" y="45" width="60" height="50" rx="4" fill="#0284c7"/>
-          <text x="60" y="74" font-size="11" fill="white" font-weight="bold" text-anchor="middle">Switch</text>
-          
-          <line x1="90" y1="55" x2="180" y2="25" stroke="#64748b" stroke-width="2"/>
-          <rect x="180" y="15" width="45" height="25" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="202" y="31" font-size="10" text-anchor="middle">Host 1</text>
-
-          <line x1="90" y1="65" x2="180" y2="55" stroke="#64748b" stroke-width="2"/>
-          <rect x="180" y="45" width="45" height="25" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="202" y="61" font-size="10" text-anchor="middle">Host 2</text>
-
-          <line x1="90" y1="75" x2="180" y2="85" stroke="#64748b" stroke-width="2"/>
-          <rect x="180" y="75" width="45" height="25" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="202" y="91" font-size="10" text-anchor="middle">Host 3</text>
-
-          <line x1="90" y1="85" x2="180" y2="115" stroke="#64748b" stroke-width="2"/>
-          <rect x="180" y="105" width="45" height="25" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="202" y="121" font-size="10" text-anchor="middle">Host 4</text>
-        </svg>
-        <div class="diagram-caption">Figure 1.8(b): Modern Switch-based LAN</div>
-      </div>
-    </div>
-
-    <!-- Section 2 -->
-    <div class="card">
-      <h2>2. Characteristics & Components of Data Communication</h2>
-      <h3>Four Key Characteristics:</h3>
-      <ul>
-        <li><strong>Delivery:</strong> Data must reach the intended destination only.</li>
-        <li><strong>Accuracy:</strong> Data must be delivered without transmission errors.</li>
-        <li><strong>Timeliness:</strong> Data must arrive promptly without significant delays.</li>
-        <li><strong>Jitter:</strong> Inconsistent packet arrival intervals must be minimized.</li>
-      </ul>
-
-      <h3>Five Components of Data Communication:</h3>
-      <div class="diagram-box">
-        <svg viewBox="0 0 600 90" width="100%" height="90">
-          <rect x="60" y="5" width="80" height="20" rx="3" fill="#e0f2fe" stroke="#0284c7"/>
-          <text x="100" y="19" font-size="10" text-anchor="middle">Protocol</text>
-          <rect x="460" y="5" width="80" height="20" rx="3" fill="#e0f2fe" stroke="#0284c7"/>
-          <text x="500" y="19" font-size="10" text-anchor="middle">Protocol</text>
-
-          <rect x="60" y="40" width="80" height="35" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="100" y="62" font-size="12" font-weight="bold" text-anchor="middle">Sender</text>
-
-          <line x1="140" y1="57" x2="460" y2="57" stroke="#3b82f6" stroke-width="3"/>
-          <rect x="250" y="42" width="100" height="28" rx="4" fill="#ffffff" stroke="#3b82f6"/>
-          <text x="300" y="59" font-size="10" font-weight="bold" text-anchor="middle">Message &rarr;</text>
-          <text x="300" y="82" font-size="10" text-anchor="middle" fill="#64748b">Transmission Medium</text>
-
-          <rect x="460" y="40" width="80" height="35" rx="4" fill="#e2e8f0" stroke="#334155"/>
-          <text x="500" y="62" font-size="12" font-weight="bold" text-anchor="middle">Receiver</text>
-        </svg>
-        <div class="diagram-caption">Figure 1.1: Five Components of Data Communication</div>
-      </div>
-
-      <h3>Data Flow Modes:</h3>
-      <ul>
-        <li><strong>Simplex:</strong> Unidirectional transmission (e.g., keyboard to CPU).</li>
-        <li><strong>Half-Duplex:</strong> Both devices transmit, but only one at a time (e.g., walkie-talkie).</li>
-        <li><strong>Full-Duplex:</strong> Simultaneous two-way transmission (e.g., telephone call).</li>
-      </ul>
-    </div>
-
-    <!-- Section 3 -->
-    <div class="card">
-      <h2>3. Network Topologies</h2>
-      <ul>
-        <li><strong>Mesh Topology:</strong> Every device connects directly to every other device via $n(n-1)/2$ links. Provides dedicated channels and high fault tolerance, but has high cabling costs.</li>
-        <li><strong>Star Topology:</strong> All devices connect to a central hub/switch. Simple to configure; hub failure brings down the network.</li>
-        <li><strong>Bus Topology:</strong> Nodes share a single backbone cable. Cost-effective, but cable faults disrupt all devices.</li>
-        <li><strong>Ring Topology:</strong> Nodes form a closed loop; tokens pass sequentially through repeaters.</li>
-      </ul>
-    </div>
-
-    <!-- Section 4 -->
-    <div class="card">
-      <h2>4. Transmission Media</h2>
-      <h3>Twisted-Pair Cable</h3>
-      <p>Composed of two insulated copper conductors twisted around each other to cancel out electromagnetic interference and crosstalk.</p>
-      <ul>
-        <li><strong>UTP (Unshielded Twisted-Pair):</strong> Standard, flexible, low-cost (uses RJ-45 connector).</li>
-        <li><strong>STP (Shielded Twisted-Pair):</strong> Includes protective metallic foil shielding against noise.</li>
-      </ul>
-
-      <h3>UTP Categories:</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th>Specification</th>
-            <th>Data Rate</th>
-            <th>Use</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Cat 1</td><td>Unshielded twisted-pair</td><td>2 Mbps</td><td>Telephone</td></tr>
-          <tr><td>Cat 2</td><td>Originally used in T1 lines</td><td>10 Mbps</td><td>T1 Lines</td></tr>
-          <tr><td>Cat 3</td><td>Improved Cat 2</td><td>20 Mbps</td><td>LANs</td></tr>
-          <tr><td>Cat 4</td><td>Improved Cat 3</td><td>100 Mbps</td><td>Token Ring</td></tr>
-          <tr><td>Cat 5</td><td>24 AWG wire with jacket</td><td>125 Mbps</td><td>LANs</td></tr>
-          <tr><td>Cat 5E</td><td>Cat 5 with crosstalk reduction</td><td>125 Mbps</td><td>LANs</td></tr>
-          <tr><td>Cat 6</td><td>Tested at 200 Mbps</td><td>200 Mbps</td><td>LANs</td></tr>
-          <tr><td>Cat 7</td><td>Helical metallic foil shield (SSTP)</td><td>600 Mbps</td><td>LANs</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Coaxial Cable</h3>
-      <p>Features a central core conductor, inner dielectric insulator, braided outer shield, and protective outer jacket. Terminated with <strong>BNC connectors</strong> (BNC, BNC T, BNC Terminator).</p>
-    </div>
-
-    <!-- Section 5 -->
-    <div class="card">
-      <h2>5. Protocol Layering & TCP/IP Model</h2>
-      <p>Communication tasks are decoupled into hierarchical layers with defined interfaces and logical connections.</p>
-
-      <h3>TCP/IP Addressing & Units:</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Layer</th>
-            <th>Data Unit</th>
-            <th>Addressing Type</th>
-            <th>Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Application</td><td>Message</td><td>Names / URLs</td><td>domain.com</td></tr>
-          <tr><td>Transport</td><td>Segment / Datagram</td><td>Port Numbers</td><td>Port 80, 443</td></tr>
-          <tr><td>Network</td><td>Datagram / Packet</td><td>Logical (IP)</td><td>192.168.1.1</td></tr>
-          <tr><td>Data Link</td><td>Frame</td><td>Physical (MAC)</td><td>78:45:C4:29:17:E8</td></tr>
-          <tr><td>Physical</td><td>Bits</td><td>None</td><td>-</td></tr>
-        </tbody>
-      </table>
-
-      <h3>OSI vs. TCP/IP Comparison:</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>TCP/IP Model</th>
-            <th>OSI Model</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Nature</td><td>Implementation model</td><td>Theoretical reference model</td></tr>
-          <tr><td>Layers</td><td>4 (or 5 modern)</td><td>7 layers</td></tr>
-          <tr><td>Approach</td><td>Horizontal approach</td><td>Vertical approach</td></tr>
-          <tr><td>Upper Layers</td><td>Combines Session, Presentation, Application</td><td>Separate Session, Presentation, Application</td></tr>
-          <tr><td>Protocols</td><td>Protocols developed first</td><td>Model developed before protocols</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <div class="card">
+    <h2>Define Computer Networks</h2>
+    <p>Click below to download the complete document.</p>
+    <a href="Define%20Computer%20Networks.docx" download class="btn">
+      📥 Download Document (.docx)
+    </a>
   </div>
 </body>
 </html>
